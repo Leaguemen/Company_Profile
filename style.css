@@ -1,0 +1,558 @@
+@font-face {
+    font-family: avenir;
+    src: url(avenir.otf);
+}
+
+@keyframes right_load{
+    0%{
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes up_load{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    font-family: avenir;
+    background-color: #fe9802;
+    width: 100%;
+    min-width: auto;
+}
+a{
+    text-decoration: none;
+
+}
+
+header{
+    background-color: white;
+    padding: 2rem;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
+}
+.dovallogo{
+    color: #fe9802;
+}
+
+.options{
+    display: flex;
+    padding: 1rem;
+    float: right;
+
+}
+
+.optiontext{
+    margin-right: 50px;
+
+}
+
+.optionlink{
+    color: orange;
+}
+
+/*HOME*/
+
+/* outlines */
+.HomeBlock{
+    height: 50%;
+    position: relative;
+    top: 100px;
+    width: 100%;
+}
+
+#teleportservice{
+    position: absolute;
+    top: 82%;
+
+}
+
+.HomeTitle{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    /* to center items in a div  */
+    position: absolute;
+    left: 25% ;
+
+    animation: up_load 500ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.HomeTitleAtribut{
+    margin-right: 200px;
+    padding-top: 1rem;
+    color: white;
+
+}
+
+.SocialMediaButtons{
+    position: fixed;
+    top: 400px;
+    left: 60px;
+
+
+}
+
+.SMB{
+    margin-bottom: 10px;
+}
+
+.HomeBlockDescription{
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    top: 22%;
+    left: 30%;
+    white-space: nowrap;
+
+    animation: right_load 500ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.HomeBlockDescription p{
+    color:#F4EEC7;
+    font-size: 20px;
+}
+
+.HBparagraph{
+    margin-bottom: 20px;
+}
+
+.HBparagraph2{
+    color:#F4EEC7;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ButtonTalian {
+    background-color: #f4eec7;
+    color:#fe9802 ;
+    text-align: center;
+    padding: 10px 20px;
+    display: inline-block;
+    transition:  0.3s ease;
+    border: 2px solid #fe9802;
+    
+}
+
+.ButtonTalian:hover{
+    background-color :#fe9802;
+    color: black;
+    border: 2px solid black;
+}
+
+
+/*service and solution*/
+
+.ServicesAndSolution{
+    height: 500%;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    background-color:#f4eec7 ;
+    color: #fe9802 ;
+    white-space: nowrap;
+}
+
+.SNSTitle{
+    position: absolute;
+    font-size: 25px;
+    top: 1%;
+    left: 30%;
+
+    animation: up_load 500ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+
+}
+
+.SNSList{
+    position: absolute;
+    font-size: 20px;
+    left: 30%;
+    top: 3%;
+
+    animation: right_load 500ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateX(-20px);
+    opacity: 0;
+
+}
+
+.SNSList ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SNSList ul li{
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.itsolutionhardware{
+    position: absolute;
+    font-size: 20px;
+    left: 30%;
+    top: 8%;
+
+}
+
+.itsolutionhardware ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.itsolutionhardware ul li{
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.portofolio {
+    position: absolute;
+    font-size: 20px;
+    left: 30%;
+    top : 26%;
+}
+
+#PortoTitle{
+    margin-bottom: 20px;
+}
+
+#subteamiwms{
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+.portofolio ul{
+    padding-left: 80px;
+}
+
+.portofolio ul li{
+    margin-bottom: 30px;
+    font-weight: 50;
+}
+
+
+
+#portodiagram{
+    margin-top: 50px;
+    position:absolute;
+    left: 40%;
+}
+
+.vid1{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+}
+
+.checkstyle1{
+    position: absolute;
+    left: 30%;
+    top: 49%;
+}
+
+.ibmmaximo{
+    position: absolute;
+    left: 30%;
+    top: 63%;
+}
+.ibmtitle{
+    margin-bottom: 4%;
+
+}
+
+.ibmparagraph{
+    margin-bottom: 4%;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.checkstyle2{
+    position: absolute;
+    left: 30%;
+    top: 85%;
+}
+
+.vid2{
+    position: absolute;
+    left: 30%;
+    top: 86%;
+}
+
+#teleportaboutus{
+    position: absolute;
+    top: 98%;
+}
+
+.aboutUs{
+    height: 80%;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    background-color:#bada55 ;
+    color: #ffffff ;
+    white-space: nowrap;
+}
+
+.aboutUs h1{
+    position: absolute;
+    left: 33%;
+    top: 7%;
+
+    animation: up_load 500ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+
+
+.AUcontent{
+    position: absolute;
+    left: 35%;
+    top: 15%;
+
+    animation: up_load 500ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.abtuspara{
+    margin-bottom: 2%;
+    font-size: 17px;
+}
+.abtuspara strong{
+    color: #fe9802;
+
+}
+
+#teleportvision{
+    position: absolute;
+    top: 75%;
+}
+
+.visionMission{
+    height: 80%;
+    position: relative;
+    background-color: #8fd0cc;
+    color: #ffffff;
+}
+
+.visionMission h1{
+    position: absolute;
+    left: 33%;
+    top: 7%;
+}
+
+.vmContent{
+    position: absolute;
+    left: 35%;
+    top: 20%;
+}
+
+.vmParagraph{
+    margin-bottom: 7%;
+
+}
+
+.vmParagraph li{
+    margin-bottom: 5%;
+
+}
+
+#vision{
+    text-decoration-line: underline;
+}
+
+#mission{
+    text-decoration-line: underline;
+}
+
+#teleportclients{
+    position: absolute;
+    top: 90%;
+}
+
+.clients{
+    height: 170%;
+    position: relative;
+    background-color: #ffffff;
+    color: #fe9802;
+}
+
+.clients h1{
+    position: absolute;
+    left: 33%;
+    top: 5%;
+}
+
+.dash{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.clientContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40%;
+}
+
+.cImage{
+    margin-right: 5%;
+
+}
+
+.cParagraph{
+    width: 110%;
+}
+
+.containerPosition{
+    position: absolute;
+    left: 35%;
+    top: 15%;
+}
+
+.cText{
+    position: absolute;
+    left: 110%;
+    width: 200%;
+
+}
+
+#teleportcontacts{
+    position: absolute;
+    top: 95%;
+}
+
+.contactUs{
+    height: 60%;
+    position: relative;
+    width: 100%;
+    background-color:#40667c ;
+    color: #ffffff ;
+    white-space: nowrap;
+}
+
+.contactUs h1{
+   position: absolute;
+    top: 10%;
+    left: 33%;
+}
+
+.contactContainer{
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+.senderIdentity{
+    display: flex;
+
+}
+
+.submissionDiv{
+    margin-right: 5%;
+
+}
+
+input, textarea{
+    background-color: #40667c;
+    border: none;
+    color: #ffffff;
+    font-family: avenir;
+}
+
+textarea{
+    resize: none;
+}
+
+input :focus{
+    outline: none;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.submitButton{
+    width: 35%;
+    height: 15%;
+    color: #ffffff;
+    background-color: #7fccf7;
+    border: none;
+    transition:  0.3s ease; 
+    position: absolute;
+    left: 57%;
+    top: 95%;   
+}
+
+.submitButton:hover{
+    background-color: #a0d5f3;
+
+}
+
+.maps{
+    height: 60%;
+    background-color: #668291;
+}
+
+
+
